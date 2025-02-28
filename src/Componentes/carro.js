@@ -12,33 +12,33 @@ export default function CarList() {
   return (
     <div
       style={{
-        position: "fixed", // Garante que cubra toda a tela sem rolagem
+        position: "fixed",
         top: 0,
         left: 0,
         width: "100vw",
         height: "100vh",
-        backgroundColor: "#000", // Fundo preto total
+        backgroundColor: "#000", 
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
         padding: "20px",
-        color: "#fff", // Letras brancas
+        color: "#fff", 
         gap: "50px"
       }}
     >
       {cars.map((car, index) => (
         <div key={index} className="flex items-center text-white gap-6">
-          {/* Imagem do carro */}
+          {}
           <div style={{ display: "flex", alignItems: "center", gap: "20px" }}>
             <img
               src={car.image}
               alt={`Imagem do ${car.name}`}
               style={{ 
                 width: "360px", 
-                height: "240px", // Largura maior e altura ajustada
-                border: "5px solid #fff", // Borda branca sólida
-                borderRadius: "15px", // Bordas arredondadas
-                boxShadow: "0 4px 8px rgba(255, 255, 255, 0.3)", // Sombra para efeito 3D
+                height: "240px", 
+                border: "5px solid #fff", 
+                borderRadius: "15px", 
+                boxShadow: "0 4px 8px rgba(255, 255, 255, 0.3)", 
               }}
             />
             <div>
